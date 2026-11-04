@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Managaer
+
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>A Lazy Task Manager</h1>
+        <button id="Create">Create Task</button>
+    
+    </nav>
+   <main>
+
+   </main>
+    <div class="container">
+        <h2>Add New Task</h2>
+
+        <form id="taskForm">
+            <h1 id="closee">X</h1>
+            <input 
+                type="text" 
+                id="taskTitle" 
+                placeholder="Enter Task Title"
+                required
+            >
+
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Study">Study</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <button type="submit">Add Task</button>
+        </form>
+
+        <div id="taskList"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

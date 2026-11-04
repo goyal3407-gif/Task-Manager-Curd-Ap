@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%-20px;
+    width: 100%-20px;
+    padding: 10px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+}
+nav{
+    background-color: rgb(217, 216, 216);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+nav button{
+    padding: 10px 20px;
+    border-radius:10px;
+    color: purple;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(217, 158, 217);
+}
+nav h1{
+    color: purple;
+    font-weight: 800;
+    font-size: 35px;
+}
+.tasks-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.task-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1px;
+    background-color: rgb(222, 221, 221);
+    width: fit-content;
+    padding: 20px;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+}
+.btns button
+{  padding: 4px 10px;
+    border-radius:10px;
+    color: purple;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(217, 158, 217);
+}
+
+.tasks-section h2{
+    margin-top: 30px;
+color: brown;
+}
+.container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    position: fixed;
+    inset: 0;
+color: aquamarine;
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.90);
+    z-index: 999;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+form input,
+form select {
+    width: 350px;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+form button {
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#closee {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: rgb(230, 228, 228);
+    font-size: 30px;
+    cursor: pointer;
+}
