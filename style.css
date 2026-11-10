@@ -106,3 +106,44 @@ form button {
     font-size: 30px;
     cursor: pointer;
 }
+/* --- Mobile responsive (added: stacks layout, scales text, tappable buttons) --- */
+@media (max-width: 600px) {
+    body, html {
+        padding: 8px;
+    }
+    nav {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px 12px;
+    }
+    nav h1 {
+        font-size: 24px;
+    }
+    nav button {
+        min-height: 44px;
+        padding: 10px 16px;
+    }
+    form {
+        padding: 0 16px;
+    }
+    form input,
+    form select {
+        width: 100%;
+        max-width: 350px;
+        font-size: 16px;
+    }
+    form button {
+        min-height: 44px;
+    }
+    .task-list {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .tasks-section h2 {
+        font-size: 20px;
+    }
+    .btns button {
+        min-height: 44px;
+        padding: 8px 14px;
+    }
+}
